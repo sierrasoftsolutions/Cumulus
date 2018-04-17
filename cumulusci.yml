@@ -158,6 +158,10 @@ tasks:
                 - npsp__General_Accounting_Unit__c
                 - Campaign
 
+    pmd:
+        description: Run Apex code analysis with PMD. This task assumes that PMD is available in PATH. On MacOS PMD is available to install in brew.
+        class_path: tasks.pmd.pmd
+
 flows:
     browsertests:
         description: Runs the browser tests locally against a managed package in Firefox
